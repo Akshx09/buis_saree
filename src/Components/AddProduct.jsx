@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function AddProduct() {
-  return (
-    <div>
-      <p>add prod</p>
-    </div>
-  )
+export default function AddProduct(props) {
+	return (
+		<div>
+			<p>add prod</p>
+			<button onClick={()=>props.close()}>Close</button>
+		</div>
+	)
 }
