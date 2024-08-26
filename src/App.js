@@ -6,6 +6,7 @@ import { ToastContainer, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LandingPage from './Components/LandingPage';
 import AddProduct from './Components/AddProduct';
+import BusinessLogin from './Components/Login';
 import 'reactjs-popup/dist/index.css'
 function App() {
 	const router = createBrowserRouter([
@@ -17,7 +18,10 @@ function App() {
 		},
 		{
 			path:"/addProd", element: <><Navbar/><AddProduct/></>
-		}
+		},
+		{
+            path: "/businessLogin",  element: <BusinessLogin />
+        }
 	])
 	return (
 		<div className="App">
