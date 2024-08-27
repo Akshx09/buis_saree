@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Popup from 'reactjs-popup'
 import AddProduct from './AddProduct'
 
@@ -11,7 +11,7 @@ export default function Home() {
 	return (
 		<div>
 			<p>home page</p>
-			<Popup trigger={<button>Add a Product</button>} 
+			<Popup trigger={<div className="wrapper"><button>Add a Product</button></div>} 
 				modal
 				nested
 			>

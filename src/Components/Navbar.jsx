@@ -29,11 +29,11 @@ export default function Navbar() {
                 <h1 className="title-bigletter">V</h1>
                 <div style={{padding:"0"}}>
                     <h1 className="title">astrika</h1>
-                    <h2 className="punchline">Threads of Tradition</h2>
+                    <h2 className="punchline">For Business</h2>
                 </div>
             </div>
             {
-                login===null ? <p className="bus-msg">The Business Side</p>
+                login===null ? <p className="bus-msg">The Business Pane</p>
                 :
                 <>
                 <p className="bus-name">{login["businessName"]}</p>
