@@ -57,17 +57,26 @@ export default function BusinessLogin() {
     return (
         <div className='wrapper light-container'>
             <div className="login-container">
-                <h2 className="login-head">Business Login</h2>
-                <div className="mail-container">
-                    <p className="ip-head">Business Email</p>
-                    <input placeholder="Business Email" type="text" className='ip-input' 
-                        onChange={(e) => handleFieldChange(e, "businessEmail")} />
+                <h2 className="login-head">Login</h2>
+                <div className="wrapper">
+                    <div className="login-ip-wrapper">
+                        <div className="form-ip">
+                            <input id='email-ip' placeholder="" type="text" className='form-ip-input' 
+                                onChange={(e) => handleFieldChange(e, "businessEmail")} />
+                            <label htmlFor="email-ip"className="form-ip-head">Email ID</label>
+                        </div>
+                    </div>
                 </div>
-                <div className="pw-container">
-                    <p className="ip-head">Password</p>
-                    <input placeholder="Password" className="ip-input" type={togglepass ? "text" : "password"} 
-                        onChange={(e) => handleFieldChange(e, "password")} />
+                <div className="wrapper">
+                <div className="login-ip-wrapper">
+                    <div className="form-ip">
+                        <input id='pw-ip' placeholder=" " className="form-ip-input" type={togglepass ? "text" : "password"} 
+                            onChange={(e) => handleFieldChange(e, "password")} />
+                        <label htmlFor='pw-ip' className="form-ip-head">Password</label>
+                    </div>
                 </div>
+                </div>
+                
                 <div className="wrapper">
                     <p className="toggle-pass" onClick={handleTogglePassword}>
                         {togglepass ? "Hide Password" : "Show Password"}

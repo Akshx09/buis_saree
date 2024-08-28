@@ -26,7 +26,7 @@ function App() {
 			path:"/addProd", element: <><Navbar/><AddProduct/></>
 		},
 		{
-            path: "/businessLogin",  element: <BusinessLogin />
+            path: "/businessLogin",  element: <><Navbar/><BusinessLogin /></>
         }
 	])
 	return (

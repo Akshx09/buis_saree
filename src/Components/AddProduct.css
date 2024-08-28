@@ -11,7 +11,11 @@
 }
 .ip-container{
     margin-left: 1vw;
+    padding: 0 0.5vw;
     width: 70%;
+}
+.ip-wrapper{
+    padding: 0 1.5vw;
 }
 .upload-container{
     position: relative;
@@ -75,8 +79,13 @@
 #prod-desc{
     margin: 0 2vw;
     font: 3vh "Ubuntu", Arial;
-    padding: 5px;
+    padding: 5px 10px;
     width: 90%;
+}
+#prod-desc:focus{
+    outline: none;
+    border: 2px solid rgb(88, 0, 88);
+    border-radius: 10px;
 }
 .btn-wrapper{
     display: flex;

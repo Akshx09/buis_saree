@@ -22,18 +22,24 @@ export default function AddProduct(props) {
 			<p className='add-prod-head'>Add Product</p>
 			<div className="add-prod-form">
 				<div className='ip-container'>
-					<div className="form-ip">
-						<input placeholder=' ' id='prod-name' type="text"  className='form-ip-input'/>
-						<label htmlFor="prod-name" className="form-ip-head">Product Name</label>
+					<div className="ip-wrapper">
+						<div className="form-ip">
+							<input placeholder=' ' id='prod-name' type="text"  className='form-ip-input'/>
+							<label htmlFor="prod-name" className="form-ip-head">Product Name</label>
+						</div>
 					</div>
 					<div className="wrapper">
-						<div className="form-ip">
-							<input id="prod-price" placeholder=" " type="text" className="form-ip-input" />
-							<label htmlFor="prod-price" className="form-ip-head">Price(₹)</label>
+						<div className="ip-wrapper">
+							<div className="form-ip">
+								<input id="prod-price" placeholder=" " type="text" className="form-ip-input" />
+								<label htmlFor="prod-price" className="form-ip-head">Price(₹)</label>
+							</div>
 						</div>
-						<div className="form-ip">
-							<input id="prod-discount" placeholder=" " type="text" className="form-ip-input" />
-							<label htmlFor="prod-discount" className="form-ip-head">Discount(%)</label>
+						<div className="ip-wrapper">
+							<div className="form-ip">
+								<input id="prod-discount" placeholder=" " type="text" className="form-ip-input" />
+								<label htmlFor="prod-discount" className="form-ip-head">Discount(%)</label>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -31,7 +31,7 @@
     transition: all 0.2s ease-out;
 }
 .form-ip-input{
-    width: 80%;
+    width: 100%;
     margin: 5vh 0 3vh 0;
     font: 3.5vh "Ubuntu", Arial;
     color: rgb(90, 90, 90);
